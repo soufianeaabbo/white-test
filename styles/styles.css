@@ -1,0 +1,86 @@
+/* Permet de faire tenir les padding & border dans les largeurs des boites */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* fais tenir les images dans leur parent et enlève l'espacement en bottom */
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* enlève les bordures autour du body */
+body{
+    margin: 0;
+}
+
+
+
+nav{
+    background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+nav a:nth-of-type(1){
+    margin-right: auto;
+}
+
+.wrappernav{
+    display: flex;
+    align-items: center;
+    width: 90%;
+}
+
+
+
+header{
+    display: flex;
+    position: relative;
+}
+
+video{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.39);
+}
+
+.txtheader{
+    margin: auto;
+    width: 30%;
+    /* background-color: red; */
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    color: white;
+}
+
+/* fin du header */
+
+
+
+
+
+/* 
+.ftb{
+    background-color: red;
+    width: 100%;
+    height: 500px;
+} */
+
+
